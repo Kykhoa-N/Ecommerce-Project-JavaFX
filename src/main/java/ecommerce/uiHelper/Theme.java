@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class Theme {
 
-    public static final Color TRANSPARENT = new Color(0,0,0,0);
+    public static final Color TRANSPARENT = new Color(0, 0, 0, 0);
     public static final Color BACKGROUND = Color.decode("#f6f6f6");
     public static final Color PANEL = Color.decode("#ffffff");
     public static final Color TEXT = Color.decode("#07080c");
@@ -22,5 +22,9 @@ public class Theme {
     public static final Color LIGHTGRAY = Color.decode("#f3f5f8");
     public static final Color NAVY1 = Color.decode("#182b4a");
     public static final Color NAVY1HOVER = Color.decode("#1e365c");
+
+
+    // #6a6ce9 Purple
+    // #687488 Gray
 
 }

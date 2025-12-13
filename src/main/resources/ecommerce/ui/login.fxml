@@ -3,28 +3,86 @@
 
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.String?>
 
 <StackPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
            stylesheets="@theme.css">
 
+    <!-- Panel -->
     <VBox styleClass="white-panel"
-          alignment="CENTER_LEFT"
-          spacing="16"
-          maxWidth="380"
-          maxHeight="490">
+          spacing="20"
+          maxWidth="400"
+          maxHeight="440"
+          alignment="CENTER">
 
-        <HBox alignment="CENTER">
-            <Label text="LOGIN" styleClass="header-text"/>
+        <!-- Header Label -->
+        <Label text="Login">
+            <styleClass>
+                <String fx:value="header-size"/>
+                <String fx:value="black-text"/>
+            </styleClass>
+        </Label>
+
+        <!-- Guide Label -->
+        <Label text="Enter your credentials to access your account" styleClass="gray-text"/>
+        <Region/>
+
+        <!-- Email Field -->
+        <TextField promptText="Email Address"/>
+
+        <!-- Password Field -->
+        <PasswordField promptText="Password">
+            <styleClass>
+                <String fx:value="input-field"/>
+            </styleClass>
+        </PasswordField>
+
+        <!-- Section: Account Option  -->
+        <HBox alignment="CENTER_LEFT">
+
+            <!-- Remember Checkbox -->
+            <CheckBox text="Remember me">
+                <styleClass>
+                    <String fx:value="gray-text"/>
+                </styleClass>
+            </CheckBox>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <!-- Forget Button -->
+            <Button text="Forgot Password?">
+                <styleClass>
+                    <String fx:value="text-button"/>
+                    <String fx:value="purple-text"/>
+                </styleClass>
+            </Button>
         </HBox>
 
-        <Label text="Username"/>
-        <TextField/>
-        <Label text="Password" />
-        <PasswordField/>
+        <!-- Login Button -->
+        <Button text="LOGIN"
+                VBox.vgrow="NEVER"
+                maxWidth="Infinity">
+            <styleClass>
+                <String fx:value="block-button"/>
+                <String fx:value="purple_background"/>
+            </styleClass>
+        </Button>
 
+        <HBox alignment="CENTER" spacing="4">
 
+            <!-- Register Label -->
+            <Label text="Don't have an account?" styleClass="gray-text"/>
 
+            <!-- Register Page Button -->
+            <Button text="Sign Up">
+                <styleClass>
+                    <String fx:value="text-button"/>
+                    <String fx:value="purple-text"/>
+                </styleClass>
+            </Button>
+        </HBox>
 
 
     </VBox>
