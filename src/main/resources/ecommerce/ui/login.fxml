@@ -14,11 +14,11 @@
     <VBox styleClass="white-panel"
           spacing="20"
           maxWidth="400"
-          maxHeight="440"
+          maxHeight="400"
           alignment="CENTER">
 
         <!-- Header Label -->
-        <Label text="Login">
+        <Label text="Sign In">
             <styleClass>
                 <String fx:value="header-size"/>
                 <String fx:value="black-text"/>
@@ -33,11 +33,7 @@
         <TextField promptText="Email Address"/>
 
         <!-- Password Field -->
-        <PasswordField promptText="Password">
-            <styleClass>
-                <String fx:value="input-field"/>
-            </styleClass>
-        </PasswordField>
+        <PasswordField promptText="Password"/>
 
         <!-- Section: Account Option  -->
         <HBox alignment="CENTER_LEFT">
