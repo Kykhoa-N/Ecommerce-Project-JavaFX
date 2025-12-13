@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           stylesheets="@theme.css">
+
+    <VBox styleClass="white-panel"
+          alignment="CENTER_LEFT"
+          spacing="16"
+          maxWidth="380"
+          maxHeight="490">
+
+        <HBox alignment="CENTER">
+            <Label text="LOGIN" styleClass="header-text"/>
+        </HBox>
+
+        <Label text="Username"/>
+        <TextField/>
+        <Label text="Password" />
+        <PasswordField/>
+
+
+
+
+
+    </VBox>
+
+
+</StackPane>
+
+

@@ -1,0 +1,6 @@
+Banana,FruitBanana,Fruit,2.17,20
+Apple,FruitApple,Fruit,1.56,20
+Milk,ProduceMilk,Produce,5.31,20
+Sausage,MeatSausage,Meat,6.42,20
+Turkey,MeatTurkey,Meat,8.18,20
+Eggs,ProduceEggs,Produce,2.99,20
