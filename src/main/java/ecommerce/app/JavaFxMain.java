@@ -1,6 +1,6 @@
 package ecommerce.app;
 
-import javafx.application.Application;
+import javafx.application.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -13,7 +13,7 @@ public class JavaFxMain extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/ecommerce/ui/register.fxml")
+                getClass().getResource("/ecommerce/ui/login.fxml")
         );
 
         Font.loadFont(getClass().getResourceAsStream("/fonts/Inter-Light.ttf"), 12);
@@ -29,6 +29,9 @@ public class JavaFxMain extends Application {
 
         stage.setScene(scene);
         stage.show();
+
+        // stop auto-focus on first TextField
+        Platform.runLater(root::requestFocus);
     }
 
     public static void main(String[] args) {

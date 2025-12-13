@@ -3,7 +3,6 @@
 
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.geometry.*?>
 <?import java.lang.String?>
 
 <StackPane xmlns="http://javafx.com/javafx"
@@ -26,7 +25,7 @@
         </Label>
 
         <!-- Guide Label -->
-        <Label text="Enter your credentials to access your account" styleClass="gray-text"/>
+        <Label text="Enter credentials to access your account" styleClass="gray-text"/>
         <Region/>
 
         <!-- Email Field -->
