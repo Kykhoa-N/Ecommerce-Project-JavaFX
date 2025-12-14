@@ -1,10 +1,41 @@
-/*-- Default --*/
+@import "button-effects.css"
+@import "color.css";
 
-    /*-- General --*/
-        .root {
-            -fx-background-color: #f6f6f6;
-            -fx-font-family: "Inter Medium";
-            -fx-font-size: 14px;
+/*-- General --*/
+    .root {
+        -fx-background-color: #f6f6f6;
+        -fx-font-family: "Inter Medium";
+        -fx-font-size: 14px;
+
+        /*-- Primary Color: Purple --*/
+        -primary-500: #6A6CE9;
+
+        /*-- Lighter Shades --*/
+        -primary-90:  derive(-primary-500, 10%);
+        -primary-75:  derive(-primary-500, 25%);
+        -primary-50:  derive(-primary-500, 50%);
+        -primary-25:  derive(-primary-500, 75%);
+        -primary-15:  derive(-primary-500, 85%);
+        -primary-5:   derive(-primary-500, 95%);
+
+        /*-- Darker Shades --*/
+        -primary-600: derive(-primary-500, -10%);
+        -primary-700: derive(-primary-500, -25%);
+        -primary-800: derive(-primary-500, -50%);
+        -primary-900: derive(-primary-500, -70%);
+
+        /*-- White Color --*/
+        -white-500: #FFFFFF;
+    }
+
+
+/*-- Default --*/
+    /*-- Panel  --*/
+        .white-panel {
+            -fx-background-color: #ffffff;
+            -fx-background-radius: 10;
+            -fx-padding: 35 30 35 30;
+            -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
         }
 
     /*-- Check Box  --*/
@@ -33,12 +64,6 @@
             -fx-font-size: 12px;
         }
 
-.white-panel {
-    -fx-background-color: #ffffff;
-    -fx-background-radius: 10;
-    -fx-padding: 35 30 35 30;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
-}
 
 /*-- Button Utility --*/
 
@@ -72,30 +97,14 @@
 
 /*-- Color --*/
 
+.label-color {
+    -fx-text-fill: #687488;
+    -fx-font-size: 10;
+}
+
 .gray-text {
     -fx-text-fill: #687488;
 }
-
-    /*-- Purple --*/
-        .purple-text {
-            -fx-text-fill: #6a6ce9;
-        }
-        .purple-text:hover {
-            -fx-text-fill: #4345e6;
-        }
-        .purple-text:pressed {
-            -fx-text-fill: #0002ff;
-        }
-        .purple_background {
-            -fx-background-color: #6a6ce9;
-        }
-        .purple_background:hover {
-                -fx-background-color: #5d5fcf;
-        }
-        .purple_background:pressed {
-            -fx-background-color: #4a4dcf;
-        }
-
 
 .black-text {
     -fx-text-fill: #212839;

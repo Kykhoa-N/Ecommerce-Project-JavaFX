@@ -13,7 +13,7 @@ public class JavaFxMain extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/ecommerce/ui/login.fxml")
+                getClass().getResource("/ecommerce/ui/color.fxml")
         );
 
         Font.loadFont(getClass().getResourceAsStream("/fonts/Inter-Light.ttf"), 12);

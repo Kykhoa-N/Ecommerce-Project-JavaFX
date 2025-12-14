@@ -1,0 +1,26 @@
+
+
+
+
+
+/*-- Effects --*/
+
+    /*-- Purple --*/
+    .purple-text {
+        -fx-text-fill: -primary-500;
+    }
+    .purple-text:hover {
+        -fx-text-fill: -primary-75;
+    }
+    .purple-text:pressed {
+        -fx-text-fill: -primary-600;
+    }
+    .purple_background {
+        -fx-background-color: -primary-500;
+    }
+    .purple_background:hover {
+            -fx-background-color: -primary-90;
+    }
+    .purple_background:pressed {
+        -fx-background-color: -primary-600;
+    }

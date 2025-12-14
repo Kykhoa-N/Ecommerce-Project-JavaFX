@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.String?>
+<?import javafx.scene.shape.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           stylesheets="@../css/theme.css">
+
+    <!-- Panel -->
+    <VBox styleClass="white-panel"
+          spacing="20"
+          maxWidth="900"
+          maxHeight="600"
+          alignment="CENTER_LEFT">
+
+        <!-- Primary Label -->
+        <Label text="Primary">
+            <styleClass>
+                <String fx:value="header-size"/>
+                <String fx:value="black-text"/>
+            </styleClass>
+        </Label>
+
+        <!-- Primary Swatch Color -->
+        <HBox spacing="20">
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-900;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="-70 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-800;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="-50 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-700;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="-25 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-600;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="-10 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-500;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="500" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-90;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="90 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-75;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="75 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-50;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="50 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-25;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="25 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-15;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="15 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-5;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="5 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+        </HBox>
+
+        <!-- Secondary Label -->
+        <Label text="Secondary">
+            <styleClass>
+                <String fx:value="header-size"/>
+                <String fx:value="black-text"/>
+            </styleClass>
+        </Label>
+
+        <!-- Secondary Swatch Color -->
+        <HBox spacing="20">
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-900;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="-70 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-800;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="-50 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-700;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="-25 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-600;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="-10 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-500;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="500" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-90;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="90 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-75;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="75 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-50;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="50 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-25;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="25 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-15;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="15 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -primary-5;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="5 %" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+        </HBox>
+
+
+
+
+        <!-- Guide Label -->
+        <Label text="Enter credentials to access your account" styleClass="gray-text"/>
+        <Region/>
+
+        <HBox>
+
+        </HBox>
+
+
+    </VBox>
+
+
+</StackPane>
+
+
