@@ -30,28 +30,28 @@
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-900;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="-70 %" styleClass="swatch-label"/>
+                    <Label text="900" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-800;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="-50 %" styleClass="swatch-label"/>
+                    <Label text="800" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-700;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="-25 %" styleClass="swatch-label"/>
+                    <Label text="700" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-600;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="-10 %" styleClass="swatch-label"/>
+                    <Label text="600" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
@@ -65,42 +65,42 @@
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-90;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="90 %" styleClass="swatch-label"/>
+                    <Label text="90" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-75;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="75 %" styleClass="swatch-label"/>
+                    <Label text="75" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-50;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="50 %" styleClass="swatch-label"/>
+                    <Label text="50" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-25;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="25 %" styleClass="swatch-label"/>
+                    <Label text="25" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-15;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="15 %" styleClass="swatch-label"/>
+                    <Label text="15" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-5;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="5 %" styleClass="swatch-label"/>
+                    <Label text="5" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
@@ -118,84 +118,187 @@
         <HBox spacing="20">
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-900;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-900;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="-70 %" styleClass="swatch-label"/>
+                    <Label text="900" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-800;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-800;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="-50 %" styleClass="swatch-label"/>
+                    <Label text="800" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-700;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-700;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="-25 %" styleClass="swatch-label"/>
+                    <Label text="700" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-600;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-600;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="-10 %" styleClass="swatch-label"/>
+                    <Label text="600" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-500;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-500;"/>
                 <VBox styleClass="swatch-footer">
                     <Label text="500" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-90;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-90;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="90 %" styleClass="swatch-label"/>
+                    <Label text="90" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-75;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-75;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="75 %" styleClass="swatch-label"/>
+                    <Label text="75" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-50;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-50;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="50 %" styleClass="swatch-label"/>
+                    <Label text="50" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-25;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-25;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="25 %" styleClass="swatch-label"/>
+                    <Label text="25" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-15;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-15;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="15 %" styleClass="swatch-label"/>
+                    <Label text="15" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
             <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -primary-5;"/>
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-5;"/>
                 <VBox styleClass="swatch-footer">
-                    <Label text="5 %" styleClass="swatch-label"/>
+                    <Label text="5" styleClass="swatch-label"/>
                 </VBox>
             </VBox>
 
         </HBox>
 
+        <!-- Shade Label -->
+        <Label text="Shade">
+            <styleClass>
+                <String fx:value="header-size"/>
+                <String fx:value="black-text"/>
+            </styleClass>
+        </Label>
+
+        <!-- Shade Swatch Color -->
+        <HBox spacing="20">
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-1000;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="1000" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-900;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="900" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-800;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="800" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-700;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="700" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-600;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="600" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-500;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="500" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-90;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="90" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-75;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="75" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-50;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="50" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-25;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="25" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-15;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="15" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-5;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="5" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -shade-0;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="0" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+        </HBox>
 
 
 

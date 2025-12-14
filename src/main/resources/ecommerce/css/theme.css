@@ -7,8 +7,9 @@
         -fx-font-family: "Inter Medium";
         -fx-font-size: 14px;
 
-        /*-- Primary Color: Purple --*/
-        -primary-500: #6A6CE9;
+        /*-- #6A6CE9: Pastel Purple
+        /*-- #EAB263: Orange Cream --*/
+        -primary-500: EAB263;
 
         /*-- Lighter Shades --*/
         -primary-90:  derive(-primary-500, 10%);
@@ -24,12 +25,46 @@
         -primary-800: derive(-primary-500, -50%);
         -primary-900: derive(-primary-500, -70%);
 
-        /*-- White Color --*/
-        -white-500: #FFFFFF;
+        /*-- #EAB263: Orange Cream --*/
+        -secondary-500: #6A6CE9;
+
+        /*-- Lighter Shades --*/
+        -secondary-90:  derive(-secondary-500, 10%);
+        -secondary-75:  derive(-secondary-500, 25%);
+        -secondary-50:  derive(-secondary-500, 50%);
+        -secondary-25:  derive(-secondary-500, 75%);
+        -secondary-15:  derive(-secondary-500, 85%);
+        -secondary-5:   derive(-secondary-500, 95%);
+
+        /*-- Darker Shades --*/
+        -secondary-600: derive(-secondary-500, -10%);
+        -secondary-700: derive(-secondary-500, -25%);
+        -secondary-800: derive(-secondary-500, -50%);
+        -secondary-900: derive(-secondary-500, -70%);
+
+        /*-- Shade Color --*/
+        -shade-500: #94A1B5;
+
+        /*-- Lighter Shades --*/
+        -shade-90:   derive(-shade-500, 10%);
+        -shade-75:   derive(-shade-500, 25%);
+        -shade-50:   derive(-shade-500, 50%);
+        -shade-25:   derive(-shade-500, 75%);
+        -shade-15:   derive(-shade-500, 85%);
+        -shade-5:    derive(-shade-500, 95%);
+        -shade-0:    derive(-shade-500, 100%);
+
+        /*-- Darker Shades --*/
+        -shade-1000: derive(-shade-500, -100%);
+        -shade-900:  derive(-shade-500, -70%);
+        -shade-600:  derive(-shade-500, -10%);
+        -shade-700:  derive(-shade-500, -25%);
+        -shade-800:  derive(-shade-500, -50%);
     }
 
 
 /*-- Default --*/
+
     /*-- Panel  --*/
         .white-panel {
             -fx-background-color: #ffffff;
@@ -66,7 +101,6 @@
 
 
 /*-- Button Utility --*/
-
 
     /*-- Text Button --*/
         .text-button {
