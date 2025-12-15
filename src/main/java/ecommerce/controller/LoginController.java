@@ -11,8 +11,8 @@ import java.io.*;
 import java.util.*;
 
 public class LoginController {
+    @FXML private TextField nameField;
     @FXML private TextField emailField;
-    @FXML private PasswordField passwordField;
     @FXML private Button loginButton;
     @FXML private Button registerPageButton;
 

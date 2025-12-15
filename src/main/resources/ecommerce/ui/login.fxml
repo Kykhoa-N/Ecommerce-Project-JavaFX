@@ -29,34 +29,13 @@
         <Label text="Enter credentials to access your account" styleClass="gray-text"/>
         <Region/>
 
+        <!-- Name Field -->
+        <TextField fx:id="nameField"
+                promptText="Full Name"/>
+
         <!-- Email Field -->
-        <TextField fx:id="emailField"
-                promptText="Email Address"/>
-
-        <!-- Password Field -->
-        <PasswordField fx:id="passwordField"
-                       promptText="Password"/>
-
-        <!-- Section: Account Option  -->
-        <HBox alignment="CENTER_LEFT">
-
-            <!-- Remember Checkbox -->
-            <CheckBox text="Remember me">
-                <styleClass>
-                    <String fx:value="gray-text"/>
-                </styleClass>
-            </CheckBox>
-
-            <Region HBox.hgrow="ALWAYS"/>
-
-            <!-- Forget Button -->
-            <Button text="Forgot Password?">
-                <styleClass>
-                    <String fx:value="text-button"/>
-                    <String fx:value="primary-text"/>
-                </styleClass>
-            </Button>
-        </HBox>
+        <PasswordField fx:id="emailField"
+                       promptText="Email Address"/>
 
         <!-- Login Button -->
         <Button fx:id="loginButton"

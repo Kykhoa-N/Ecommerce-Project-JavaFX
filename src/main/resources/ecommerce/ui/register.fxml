@@ -35,30 +35,10 @@
         <!-- Email Field -->
         <TextField fx:id="emailField" promptText="Email Address"/>
 
-        <!-- Password Field -->
-        <PasswordField fx:id="passwordField" promptText="Password"/>
-        <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password"/>
-
-
-        <!-- Section: Account Option  -->
-        <HBox alignment="CENTER_LEFT">
-
-            <!-- Accept Checkbox -->
-            <CheckBox text="Accept ">
-                <styleClass>
-                    <String fx:value="gray-text"/>
-                </styleClass>
-            </CheckBox>
-
-            <!-- Terms Button -->
-            <Button text="terms and conditions">
-                <styleClass>
-                    <String fx:value="text-button"/>
-                    <String fx:value="primary-text"/>
-                </styleClass>
-            </Button>
-
-        </HBox>
+        <!-- Role ComboBox -->
+        <ComboBox fx:id="roleComboBox"
+                  promptText="Select Role"
+                  maxWidth="Infinity"/>
 
         <!-- Sign Up Button -->
         <Button fx:id="registerButton"

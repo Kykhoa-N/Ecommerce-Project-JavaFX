@@ -7,12 +7,25 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import ecommerce.customUI.*;
-
 import java.io.IOException;
 
+import ecommerce.service.*;
+import ecommerce.repo.*;
+import ecommerce.model.*;
 
 
 public class JavaFxMain extends Application {
+
+    UserRepo userRepo = new UserRepo();
+    CartRepo cartRepo = new CartRepo();
+    ProductRepo productRepo = new ProductRepo();
+    OrderRepo orderRepo = new OrderRepo();
+
+    AuthService authService = new AuthService(userRepo);
+    CartService cartService = new CartService(cartRepo, productRepo);
+    ProductService productService = new ProductService(productRepo, orderRepo, cartRepo);
+    OrderService orderService = new OrderService(orderRepo);
+    ReportService reportService = new ReportService(orderRepo, productRepo);
 
     @Override
     public void start(Stage stage) throws Exception{

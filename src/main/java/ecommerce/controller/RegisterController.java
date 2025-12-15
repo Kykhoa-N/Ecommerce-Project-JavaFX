@@ -1,6 +1,8 @@
 package ecommerce.controller;
 
+import ecommerce.model.Role;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -16,33 +18,26 @@ public class RegisterController {
 
     @FXML private TextField nameField;
     @FXML private TextField emailField;
-    @FXML private PasswordField passwordField;
-    @FXML private PasswordField confirmPasswordField;
+    @FXML private ComboBox<Role> roleComboBox;
     @FXML private Button registerButton;
     @FXML private Button loginPageButton;
 
     @FXML
     private void initialize() {
+        roleComboBox.getItems().addAll(Role.values());
+        roleComboBox.setValue(Role.CLIENT); // Default Selection
     }
 
     @FXML
     private void onRegister() {
         String name = nameField.getText().trim();
         String email = emailField.getText().trim();
-        String password = passwordField.getText().trim();
-        String confirm = confirmPasswordField.getText().trim();
 
-        if(name.isEmpty() || email.isEmpty() || password.isEmpty() || confirm.isEmpty()) {
+        if(name.isEmpty() || email.isEmpty()) {
             System.out.println("Please fill all field");
             return;
         }
 
-        if(!(password.equals(confirm))) {
-            System.out.println("Passwords do+ not match");
-            return;
-        }
-
-        
         System.out.println("Register clicked");
     }
 
