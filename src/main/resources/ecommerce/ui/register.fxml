@@ -7,6 +7,7 @@
 
 <StackPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
+           fx:controller="ecommerce.controller.RegisterController"
            stylesheets="@../css/theme.css">
 
     <!-- Panel -->
@@ -29,14 +30,14 @@
         <Region/>
 
         <!-- Name Field -->
-        <TextField promptText="Full Name"/>
+        <TextField fx:id="nameField" promptText="Full Name"/>
 
         <!-- Email Field -->
-        <TextField promptText="Email Address"/>
+        <TextField fx:id="emailField" promptText="Email Address"/>
 
         <!-- Password Field -->
-        <PasswordField promptText="Password"/>
-        <PasswordField promptText="Confirm Password"/>
+        <PasswordField fx:id="passwordField" promptText="Password"/>
+        <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password"/>
 
 
         <!-- Section: Account Option  -->
@@ -60,7 +61,9 @@
         </HBox>
 
         <!-- Sign Up Button -->
-        <Button text="SIGN UP"
+        <Button fx:id="registerButton"
+                onAction="#onRegister"
+                text="SIGN UP"
                 VBox.vgrow="NEVER"
                 maxWidth="Infinity">
             <styleClass>
@@ -75,7 +78,9 @@
             <Label text="Already have an account?" styleClass="gray-text"/>
 
             <!-- Login Page Button -->
-            <Button text="Login">
+            <Button fx:id="loginPageButton"
+                    onAction="#goToLogin"
+                    text="Login">
                 <styleClass>
                     <String fx:value="text-button"/>
                     <String fx:value="primary-text"/>
