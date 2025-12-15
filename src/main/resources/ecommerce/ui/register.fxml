@@ -53,7 +53,7 @@
             <Button text="terms and conditions">
                 <styleClass>
                     <String fx:value="text-button"/>
-                    <String fx:value="purple-text"/>
+                    <String fx:value="primary-text"/>
                 </styleClass>
             </Button>
 
@@ -65,7 +65,7 @@
                 maxWidth="Infinity">
             <styleClass>
                 <String fx:value="block-button"/>
-                <String fx:value="purple_background"/>
+                <String fx:value="primary-bg"/>
             </styleClass>
         </Button>
 
@@ -78,7 +78,7 @@
             <Button text="Login">
                 <styleClass>
                     <String fx:value="text-button"/>
-                    <String fx:value="purple-text"/>
+                    <String fx:value="primary-text"/>
                 </styleClass>
             </Button>
         </HBox>

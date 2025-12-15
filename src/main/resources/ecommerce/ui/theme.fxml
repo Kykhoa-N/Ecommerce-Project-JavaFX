@@ -12,20 +12,26 @@
     <!-- Panel -->
     <VBox styleClass="white-panel"
           spacing="20"
-          maxWidth="900"
+          maxWidth="1100"
           maxHeight="600"
           alignment="CENTER_LEFT">
 
-        <!-- Primary Label -->
-        <Label text="Primary">
-            <styleClass>
-                <String fx:value="header-size"/>
-                <String fx:value="black-text"/>
-            </styleClass>
-        </Label>
 
         <!-- Primary Swatch Color -->
         <HBox spacing="20">
+
+            <VBox minWidth="170"
+                  alignment="CENTER_LEFT">
+                <!-- Primary Label -->
+                <Label text="Primary">
+                    <styleClass>
+                        <String fx:value="header-size"/>
+                        <String fx:value="black-text"/>
+                    </styleClass>
+                </Label>
+            </VBox>
+
+            <Region minWidth="40"/>
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -primary-900;"/>
@@ -106,106 +112,20 @@
 
         </HBox>
 
-        <!-- Secondary Label -->
-        <Label text="Secondary">
-            <styleClass>
-                <String fx:value="header-size"/>
-                <String fx:value="black-text"/>
-            </styleClass>
-        </Label>
-
-        <!-- Secondary Swatch Color -->
-        <HBox spacing="20">
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-900;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="900" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-800;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="800" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-700;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="700" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-600;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="600" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-500;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="500" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-90;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="90" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-75;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="75" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-50;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="50" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-25;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="25" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-15;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="15" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-            <VBox spacing="0" styleClass="swatch-card">
-                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-5;"/>
-                <VBox styleClass="swatch-footer">
-                    <Label text="5" styleClass="swatch-label"/>
-                </VBox>
-            </VBox>
-
-        </HBox>
-
-        <!-- Shade Label -->
-        <Label text="Shade">
-            <styleClass>
-                <String fx:value="header-size"/>
-                <String fx:value="black-text"/>
-            </styleClass>
-        </Label>
-
         <!-- Shade Swatch Color -->
         <HBox spacing="20">
+
+            <VBox minWidth="170"
+                  alignment="CENTER_LEFT">
+                <!-- Shade Label -->
+                <Label text="Shade">
+                    <styleClass>
+                        <String fx:value="header-size"/>
+                        <String fx:value="black-text"/>
+                    </styleClass>
+                </Label>
+            </VBox>
+
 
             <VBox spacing="0" styleClass="swatch-card">
                 <Region styleClass="swatch-color" style="-fx-background-color: -shade-1000;"/>
@@ -298,15 +218,100 @@
                 </VBox>
             </VBox>
 
+
         </HBox>
+        <!-- Secondary Swatch Color -->
+        <HBox spacing="20">
 
+            <VBox minWidth="170"
+                  alignment="CENTER_LEFT">
+                <!-- Secondary Label -->
+                <Label text="Secondary">
+                    <styleClass>
+                        <String fx:value="header-size"/>
+                        <String fx:value="black-text"/>
+                    </styleClass>
+                </Label>
+            </VBox>
 
+            <Region minWidth="40"/>
 
-        <!-- Guide Label -->
-        <Label text="Enter credentials to access your account" styleClass="gray-text"/>
-        <Region/>
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-900;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="900" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
 
-        <HBox>
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-800;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="800" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-700;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="700" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-600;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="600" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-500;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="500" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-90;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="90" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-75;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="75" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-50;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="50" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-25;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="25" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-15;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="15" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="0" styleClass="swatch-card">
+                <Region styleClass="swatch-color" style="-fx-background-color: -secondary-5;"/>
+                <VBox styleClass="swatch-footer">
+                    <Label text="5" styleClass="swatch-label"/>
+                </VBox>
+            </VBox>
 
         </HBox>
 
