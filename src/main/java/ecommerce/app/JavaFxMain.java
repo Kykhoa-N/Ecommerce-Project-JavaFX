@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import ecommerce.customUI.*;
 
 import java.io.IOException;
-import java.util.Arrays;
+
 
 
 public class JavaFxMain extends Application {
@@ -44,19 +44,6 @@ public class JavaFxMain extends Application {
     }
 
     public static void main(String[] args) {
-        int[] rgb = new int[]{255, 125, 0};
-        int[] rgb2 = new int[]{255, 0, 0};
-        int[] rgb3 = new int[]{255, 255, 0};
-
-        System.out.println("Pastel Orange: " + Arrays.toString(PastelColorMath.modernDirtyRgb(rgb[0], rgb[1],rgb[2])));
-        System.out.println("UIColor Orange: " + Arrays.toString(UIColorMath.modernDirtyRgb(rgb[0], rgb[1],rgb[2])));
-
-        System.out.println("Pastel Red: " + Arrays.toString(PastelColorMath.modernDirtyRgb(rgb2[0], rgb2[1],rgb2[2])));
-        System.out.println("UIColor Red: " + Arrays.toString(UIColorMath.modernDirtyRgb(rgb2[0], rgb2[1],rgb2[2])));
-
-        System.out.println("Pastel Yellow: " + Arrays.toString(PastelColorMath.modernDirtyRgb(rgb3[0], rgb3[1],rgb3[2])));
-        System.out.println("UIColor Yellow: " + Arrays.toString(UIColorMath.modernDirtyRgb(rgb3[0], rgb3[1],rgb3[2])));
-
         launch();
     }
 }
