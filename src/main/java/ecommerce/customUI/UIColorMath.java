@@ -1,4 +1,4 @@
-package ecommerce.app;
+package ecommerce.customUI;
 
 public class UIColorMath {
 
