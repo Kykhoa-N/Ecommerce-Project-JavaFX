@@ -1,5 +1,6 @@
 package ecommerce.controller;
 
+import ecommerce.app.AppContext;
 import javafx.scene.control.*;
 import javafx.application.*;
 import javafx.fxml.*;
@@ -8,12 +9,9 @@ import java.io.*;
 import java.util.*;
 
 import ecommerce.model.*;
-import ecommerce.service.*;
-import ecommerce.repo.*;
+import ecommerce.app.*;
 
-
-
-public class RegisterController {
+public class RegisterController implements UseAppContext{
 
     @FXML private TextField nameField;
     @FXML private TextField emailField;
@@ -21,12 +19,17 @@ public class RegisterController {
     @FXML private Button registerButton;
     @FXML private Button loginPageButton;
 
-    private AuthService authService;
+    private AppContext app;
 
     @FXML
     private void initialize() {
         roleComboBox.getItems().addAll(Role.values());
         roleComboBox.setValue(Role.CLIENT); // Default Selection
+    }
+
+    @Override
+    public void loadInfo(AppContext appContext) {
+        this.app = appContext;
     }
 
     @FXML
@@ -35,45 +38,24 @@ public class RegisterController {
         String email = emailField.getText().trim();
         Role role = roleComboBox.getValue();
 
-        boolean success = authService.register(name, email, role);
+        boolean success = app.getAuthService().register(name, email, role);
 
         if(!success) {
             System.out.println("Wrong Input, Try Again");
             return;
         }
         else {
-            try {
-                Parent loginRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/ecommerce/ui/login.fxml")));
-                Scene scene = loginPageButton.getScene();
-                scene.setRoot(loginRoot);
-                Platform.runLater(loginRoot::requestFocus);
-            }
-            catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            System.out.println("REGISTERED account");
+            app.switchTo("/ecommerce/ui/login.fxml");
         }
 
+        System.out.println("REGISTERED account");
     }
+
+
 
     @FXML
     private void goToLogin() {
-        try {
-            Parent loginRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/ecommerce/ui/login.fxml")));
-            Scene scene = loginPageButton.getScene();
-            scene.setRoot(loginRoot);
-            Platform.runLater(loginRoot::requestFocus);
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+        app.switchTo("/ecommerce/ui/login.fxml");
         System.out.println("go to LOGIN-PAGE");
     }
-
-
-    public void loadInfo(AuthService authService) {
-        this.authService = authService;
-    }
-
 }

@@ -1,35 +1,38 @@
 package ecommerce.controller;
 
+import ecommerce.app.AppContext;
+import ecommerce.app.UseAppContext;
+import ecommerce.model.Role;
 import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import javafx.application.Platform;
 import javafx.fxml.*;
 import javafx.scene.*;
-import java.io.*;
 import java.util.*;
+import ecommerce.app.AppContext;
 
-public class LoginController {
+public class LoginController implements UseAppContext {
     @FXML private TextField nameField;
     @FXML private TextField emailField;
     @FXML private Button loginButton;
     @FXML private Button registerPageButton;
 
+    private AppContext app;
+
+    @FXML
+    private void initialize() {
+    }
+
+    @Override
+    public void loadInfo(AppContext appContext) {
+        this.app = appContext;
+    }
+
     @FXML
     private void goToRegister() {
-        try {
-            Parent registerRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/ecommerce/ui/register.fxml")));
-            Scene loginRoot = registerPageButton.getScene();
-            loginRoot.setRoot(registerRoot);
-
-            Platform.runLater(registerRoot::requestFocus);
-
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-
+        app.switchTo("/ecommerce/ui/register.fxml");
         System.out.println("go to REGISTER-PAGE");
     }
+
 }

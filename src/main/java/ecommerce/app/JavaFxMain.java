@@ -2,50 +2,53 @@ package ecommerce.app;
 
 import ecommerce.controller.RegisterController;
 import javafx.application.*;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.fxml.*;
+import javafx.scene.*;
+import javafx.stage.*;
 
 import ecommerce.customUI.*;
 import java.io.IOException;
 
 import ecommerce.service.*;
 import ecommerce.repo.*;
-import ecommerce.model.*;
 
 
 public class JavaFxMain extends Application {
 
+    // Initialize Repo Field
     private final UserRepo userRepo = new UserRepo();
-    private final CartRepo cartRepo = new CartRepo();
     private final ProductRepo productRepo = new ProductRepo();
+    private final CartRepo cartRepo = new CartRepo();
     private final OrderRepo orderRepo = new OrderRepo();
 
+    // Initialize Service Field
     private final AuthService authService = new AuthService(userRepo);
-    private final CartService cartService = new CartService(cartRepo, productRepo);
     private final ProductService productService = new ProductService(productRepo, orderRepo, cartRepo);
+    private final CartService cartService = new CartService(cartRepo, productRepo);
     private final OrderService orderService = new OrderService(orderRepo);
     private final ReportService reportService = new ReportService(orderRepo, productRepo);
+
+    // Initialize Context For Transfer
+    private AppContext appContext;
+
+    // Declare a Reusable Scene
+    private Scene scene;
 
     @Override
     public void start(Stage stage) throws Exception{
         customFont.loadInter();
-        initScreen(stage);
-    }
 
-    public void initScreen(Stage stage) throws IOException {
-        FXMLLoader registerLoader = new FXMLLoader(getClass().getResource("/ecommerce/ui/register.fxml"));
-        Parent registerRoot = registerLoader.load();
-        Scene loginScene = new Scene(registerRoot, 1500, 800);
+        // Initialize a Window Container to show Displays
+        scene = new Scene(new javafx.scene.layout.StackPane(), 1500, 800);
+        appContext = new AppContext(scene, authService, productService, cartService, orderService, reportService);
 
-        RegisterController registerController = registerLoader.getController();
-        registerController.loadInfo(authService);
-
-        stage.setScene(loginScene);
+        stage.setScene(scene);
         stage.show();
-        Platform.runLater(registerRoot::requestFocus);
+
+        // Use appContext helper method to switch Displays
+        appContext.switchTo("/ecommerce/ui/register.fxml");
     }
+
 
     public void initTheme() throws IOException {
         FXMLLoader themeLoader = new FXMLLoader(getClass().getResource("/ecommerce/ui/theme.fxml"));
