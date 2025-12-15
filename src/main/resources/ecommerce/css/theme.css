@@ -8,8 +8,9 @@
         -fx-font-size: 14px;
 
         /*-- #6A6CE9: Pastel Purple
-        /*-- #EAB263: Orange Cream --*/
-        -primary-500: EAB263;
+        /*-- FFC067: Orange Pastel
+        /*-- #EAB263: Dirty Orange Pastel --*/
+        -primary-500: #f0953d;
 
         /*-- Lighter Shades --*/
         -primary-90:  derive(-primary-500, 10%);

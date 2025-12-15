@@ -1,6 +1,5 @@
-package ecommerce.uiHelper;
+package ecommerce.service;
 
-import ecommerce.model.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
