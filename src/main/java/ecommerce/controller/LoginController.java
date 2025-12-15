@@ -22,12 +22,14 @@ public class LoginController {
             Parent registerRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/ecommerce/ui/register.fxml")));
             Scene loginRoot = registerPageButton.getScene();
             loginRoot.setRoot(registerRoot);
+
             Platform.runLater(registerRoot::requestFocus);
+
         }
         catch (Exception e) {
             e.printStackTrace();
         }
 
-        System.out.println("Go to register page");
+        System.out.println("go to REGISTER-PAGE");
     }
 }

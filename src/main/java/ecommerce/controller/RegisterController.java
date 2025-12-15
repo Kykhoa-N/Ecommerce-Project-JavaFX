@@ -1,18 +1,17 @@
 package ecommerce.controller;
 
-import ecommerce.model.Role;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
-
-import javafx.application.Platform;
+import javafx.scene.control.*;
+import javafx.application.*;
 import javafx.fxml.*;
 import javafx.scene.*;
 import java.io.*;
 import java.util.*;
 
-import ecommerce.service.AuthService;
+import ecommerce.model.*;
+import ecommerce.service.*;
+import ecommerce.repo.*;
+
+
 
 public class RegisterController {
 
@@ -21,6 +20,8 @@ public class RegisterController {
     @FXML private ComboBox<Role> roleComboBox;
     @FXML private Button registerButton;
     @FXML private Button loginPageButton;
+
+    private AuthService authService;
 
     @FXML
     private void initialize() {
@@ -32,13 +33,28 @@ public class RegisterController {
     private void onRegister() {
         String name = nameField.getText().trim();
         String email = emailField.getText().trim();
+        Role role = roleComboBox.getValue();
 
-        if(name.isEmpty() || email.isEmpty()) {
-            System.out.println("Please fill all field");
+        boolean success = authService.register(name, email, role);
+
+        if(!success) {
+            System.out.println("Wrong Input, Try Again");
             return;
         }
+        else {
+            try {
+                Parent loginRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/ecommerce/ui/login.fxml")));
+                Scene scene = loginPageButton.getScene();
+                scene.setRoot(loginRoot);
+                Platform.runLater(loginRoot::requestFocus);
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
 
-        System.out.println("Register clicked");
+            System.out.println("REGISTERED account");
+        }
+
     }
 
     @FXML
@@ -52,8 +68,12 @@ public class RegisterController {
         catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("go to LOGIN-PAGE");
+    }
 
-        System.out.println("Go to login page");
+
+    public void loadInfo(AuthService authService) {
+        this.authService = authService;
     }
 
 }
