@@ -46,7 +46,7 @@ public class JavaFxMain extends Application {
         stage.show();
 
         // Use appContext helper method to switch Displays
-        appContext.switchTo("/ecommerce/ui/register.fxml");
+        appContext.switchTo("/ecommerce/ui/login.fxml");
     }
 
 

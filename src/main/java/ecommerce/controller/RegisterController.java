@@ -44,7 +44,7 @@ public class RegisterController implements UseAppContext{
         boolean success = app.getAuthService().register(name, email, role);
 
         if(!success) {
-            System.out.println("!! WRONG INPUT, TRY AGAIN");
+            System.out.println("!! INVALID INPUT, TRY AGAIN");
             return;
         }
         else {

@@ -12,13 +12,13 @@ import ecommerce.service.*;
 
 public class AppContext {
 
-    // Current User Shell
+    // Current User state
     private User currentUser;
 
-    // Scene Shell
+    // Scene state
     private final Scene scene;
 
-    // Service Shell
+    // Service state
     private final AuthService authService;
     private final ProductService productService;
     private final CartService cartService;

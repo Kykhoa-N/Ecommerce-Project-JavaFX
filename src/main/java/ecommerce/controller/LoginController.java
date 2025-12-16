@@ -36,7 +36,10 @@ public class LoginController implements UseAppContext {
             System.out.println("!! INVALID CREDENTIAL, TRY AGAIN");
         }
         else {
-            System.out.println("LOGIN current user");
+            app.setCurrentUser(current_user);
+            app.switchTo("/ecommerce/ui/dashboard.fxml");
+
+            System.out.println("LOGIN current user.");
         }
     }
 

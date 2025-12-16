@@ -6,8 +6,206 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.image.ImageView?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            prefHeight="400.0" prefWidth="600.0">
+            fx:controller="ecommerce.controller.DashboardController"
+            stylesheets="@/ecommerce/css/theme.css">
+
+
+    <left>
+
+        <!-- Side Bar Container -->
+        <VBox prefHeight="Infinity" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);">
+
+            <!-- Service Section -->
+            <VBox styleClass="top-section"
+                  spacing="10"
+                  VBox.vgrow="ALWAYS">
+
+                <!-- Header -->
+                <VBox>
+                    <Label text="e-shop">
+                        <styleClass>
+                            <String fx:value="header-size"/>
+                            <String fx:value="black-text"/>
+                        </styleClass>
+                    </Label>
+                    <Label text="Ecommerce Shop">
+                        <styleClass>
+                            <String fx:value="subheader-size"/>
+                            <String fx:value="gray-text"/>
+                        </styleClass>
+                    </Label>
+                </VBox>
+                <Region prefHeight="20"/>
+
+                <!-- Inventory Page Button -->
+                <Button text="Inventory"
+                        VBox.vgrow="NEVER"
+                        maxWidth="Infinity">
+                    <styleClass>
+                        <String fx:value="sidebar-button"/>
+                        <String fx:value="shade-bg"/>
+                    </styleClass>
+
+                    <graphic>
+                        <StackPane styleClass="icon-wrap">
+                            <ImageView fitWidth="16"
+                                       fitHeight="16"
+                                       preserveRatio="true"/>
+                        </StackPane>
+                    </graphic>
+                </Button>
+
+                <!-- Order Page Button -->
+                <Button text="Orders"
+                        VBox.vgrow="NEVER"
+                        maxWidth="Infinity">
+                    <styleClass>
+                        <String fx:value="sidebar-button"/>
+                        <String fx:value="shade-bg"/>
+                    </styleClass>
+
+                    <graphic>
+                        <StackPane styleClass="icon-wrap">
+                            <ImageView fitWidth="16"
+                                       fitHeight="16"
+                                       preserveRatio="true"/>
+                        </StackPane>
+                    </graphic>
+                </Button>
+
+                <!-- Report Page Button -->
+                <Button text="Report"
+                        VBox.vgrow="NEVER"
+                        maxWidth="Infinity">
+                    <styleClass>
+                        <String fx:value="sidebar-button"/>
+                        <String fx:value="shade-bg"/>
+                    </styleClass>
+
+                    <graphic>
+                        <StackPane styleClass="icon-wrap">
+                            <ImageView fitWidth="16"
+                                       fitHeight="16"
+                                       preserveRatio="true"/>
+                        </StackPane>
+                    </graphic>
+                </Button>
+
+                <!-- Store Page Button -->
+                <Button text="Store"
+                        VBox.vgrow="NEVER"
+                        maxWidth="Infinity">
+                    <styleClass>
+                        <String fx:value="sidebar-button"/>
+                        <String fx:value="shade-bg"/>
+                    </styleClass>
+
+                    <graphic>
+                        <StackPane styleClass="icon-wrap">
+                            <ImageView fitWidth="16"
+                                       fitHeight="16"
+                                       preserveRatio="true"/>
+                        </StackPane>
+                    </graphic>
+                </Button>
+
+                <!-- Cart Page Button -->
+                <Button text="Cart"
+                        VBox.vgrow="NEVER"
+                        maxWidth="Infinity">
+                    <styleClass>
+                        <String fx:value="sidebar-button"/>
+                        <String fx:value="shade-bg"/>
+                    </styleClass>
+
+                    <graphic>
+                        <StackPane styleClass="icon-wrap">
+                            <ImageView fitWidth="16"
+                                       fitHeight="16"
+                                       preserveRatio="true"/>
+                        </StackPane>
+                    </graphic>
+                </Button>
+                <Region prefHeight="40"/>
+
+            </VBox>
+
+            <!-- Profile Section -->
+            <HBox styleClass="profile-section"
+                  spacing="20">
+
+                <!-- Profile Picture-->
+                <StackPane styleClass="icon-wrap">
+                    <ImageView fitWidth="35"
+                               fitHeight="35"
+                               preserveRatio="true"/>
+                </StackPane>
+
+                <!-- Profile Information-->
+                <VBox>
+                    <Label text="Nicole Orellana"/>
+                    <Label text="Admin">
+                        <styleClass>
+                            <String fx:value="subheader-size"/>
+                            <String fx:value="gray-text"/>
+                        </styleClass>
+                    </Label>
+                </VBox>
+            </HBox>
+
+            <!-- Account Section -->
+            <VBox styleClass="bottom-section"
+                  spacing="10">
+
+                <!-- Logout Button -->
+                <Button fx:id="logoutButton"
+                        onAction="#onLogout"
+                        text="Sign Out"
+                        VBox.vgrow="NEVER"
+                        maxWidth="Infinity">
+                    <styleClass>
+                        <String fx:value="sidebar-button"/>
+                        <String fx:value="shade-bg"/>
+                    </styleClass>
+
+                    <graphic>
+                        <StackPane styleClass="icon-wrap">
+                            <ImageView fitWidth="16"
+                            fitHeight="16"
+                            preserveRatio="true"/>
+                        </StackPane>
+                    </graphic>
+
+                </Button>
+
+                <!-- Settings Button -->
+                <Button text="Settings"
+                        VBox.vgrow="NEVER"
+                        maxWidth="Infinity">
+                    <styleClass>
+                        <String fx:value="sidebar-button"/>
+                        <String fx:value="shade-bg"/>
+                    </styleClass>
+
+                    <graphic>
+                        <StackPane styleClass="icon-wrap">
+                            <ImageView fitWidth="16"
+                                       fitHeight="16"
+                                       preserveRatio="true"/>
+                        </StackPane>
+                    </graphic>
+                </Button>
+            </VBox>
+
+
+        </VBox>
+
+
+    </left>
+
 
 </BorderPane>
