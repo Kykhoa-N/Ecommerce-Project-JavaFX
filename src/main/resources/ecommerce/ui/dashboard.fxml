@@ -40,7 +40,6 @@
                     </Label>
                 </VBox>
                 <Region prefHeight="20"/>
-
                 <!-- Inventory Page Button -->
                 <Button text="Inventory"
                         VBox.vgrow="NEVER"
@@ -131,7 +130,6 @@
                     </graphic>
                 </Button>
                 <Region prefHeight="40"/>
-
             </VBox>
 
             <!-- Profile Section -->
@@ -147,8 +145,8 @@
 
                 <!-- Profile Information-->
                 <VBox>
-                    <Label text="Nicole Orellana"/>
-                    <Label text="Admin">
+                    <Label fx:id="accountName"/>
+                    <Label fx:id="accountRole">
                         <styleClass>
                             <String fx:value="subheader-size"/>
                             <String fx:value="gray-text"/>

@@ -11,6 +11,9 @@ import javafx.scene.image.ImageView;
 
 public class DashboardController implements UseAppContext {
 
+    public Label accountName;
+    public Label accountRole;
+
     @FXML private Button logoutButton;
     private AppContext app;
 
@@ -21,6 +24,11 @@ public class DashboardController implements UseAppContext {
     @Override
     public void loadInfo(AppContext appContext) {
         this.app = appContext;
+
+        User user = this.app.getCurrentUser();
+
+        accountName.setText(user.getName());
+        accountRole.setText(user.getRole().getDisplayName());
     }
 
     @FXML
