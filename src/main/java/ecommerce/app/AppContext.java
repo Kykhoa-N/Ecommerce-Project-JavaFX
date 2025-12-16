@@ -1,16 +1,22 @@
 package ecommerce.app;
 
-import ecommerce.service.*;
 import javafx.application.*;
 import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.stage.*;
 import java.io.*;
 
+import ecommerce.model.*;
+import ecommerce.service.*;
+
+
 public class AppContext {
 
+    // Current User Shell
+    private User currentUser;
+
     // Scene Shell
-    private Scene scene;
+    private final Scene scene;
 
     // Service Shell
     private final AuthService authService;
@@ -48,6 +54,15 @@ public class AppContext {
 
     public ReportService getReportService() {
         return reportService;
+    }
+
+    // Current User Methods
+    public User getCurrentUser() {
+        return currentUser;
+    }
+
+    public void setCurrentUser(User user) {
+        this.currentUser = user;
     }
 
     // Switch scene method

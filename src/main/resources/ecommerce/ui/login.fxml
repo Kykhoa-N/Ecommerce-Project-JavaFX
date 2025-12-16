@@ -39,6 +39,7 @@
 
         <!-- Login Button -->
         <Button fx:id="loginButton"
+                onAction="#onLogin"
                 text="LOGIN"
                 VBox.vgrow="NEVER"
                 maxWidth="Infinity">

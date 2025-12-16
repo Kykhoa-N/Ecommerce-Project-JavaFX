@@ -1,16 +1,12 @@
 package ecommerce.controller;
 
-import ecommerce.app.AppContext;
-import ecommerce.app.UseAppContext;
-import ecommerce.model.Role;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-
-import javafx.application.Platform;
+import ecommerce.model.User;
+import javafx.scene.control.*;
 import javafx.fxml.*;
 import javafx.scene.*;
 import java.util.*;
-import ecommerce.app.AppContext;
+
+import ecommerce.app.*;
 
 public class LoginController implements UseAppContext {
     @FXML private TextField nameField;
@@ -30,9 +26,24 @@ public class LoginController implements UseAppContext {
     }
 
     @FXML
+    public void onLogin() {
+        String name = nameField.getText();
+        String email = emailField.getText();
+
+        User current_user = app.getAuthService().login(name, email);
+
+        if(current_user == null) {
+            System.out.println("!! INVALID CREDENTIAL, TRY AGAIN");
+        }
+        else {
+            System.out.println("LOGIN current user");
+        }
+    }
+
+    @FXML
     private void goToRegister() {
         app.switchTo("/ecommerce/ui/register.fxml");
-        System.out.println("go to REGISTER-PAGE");
+        System.out.println("go to REGISTER-PAGE.");
     }
 
 }

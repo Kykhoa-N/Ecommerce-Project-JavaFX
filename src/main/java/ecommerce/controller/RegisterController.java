@@ -1,6 +1,5 @@
 package ecommerce.controller;
 
-import ecommerce.app.AppContext;
 import javafx.scene.control.*;
 import javafx.application.*;
 import javafx.fxml.*;
@@ -10,6 +9,7 @@ import java.util.*;
 
 import ecommerce.model.*;
 import ecommerce.app.*;
+
 
 public class RegisterController implements UseAppContext{
 
@@ -21,16 +21,19 @@ public class RegisterController implements UseAppContext{
 
     private AppContext app;
 
+
     @FXML
     private void initialize() {
         roleComboBox.getItems().addAll(Role.values());
         roleComboBox.setValue(Role.CLIENT); // Default Selection
     }
 
+
     @Override
     public void loadInfo(AppContext appContext) {
         this.app = appContext;
     }
+
 
     @FXML
     private void onRegister() {
@@ -41,7 +44,7 @@ public class RegisterController implements UseAppContext{
         boolean success = app.getAuthService().register(name, email, role);
 
         if(!success) {
-            System.out.println("Wrong Input, Try Again");
+            System.out.println("!! WRONG INPUT, TRY AGAIN");
             return;
         }
         else {
@@ -52,10 +55,9 @@ public class RegisterController implements UseAppContext{
     }
 
 
-
     @FXML
     private void goToLogin() {
         app.switchTo("/ecommerce/ui/login.fxml");
-        System.out.println("go to LOGIN-PAGE");
+        System.out.println("go to LOGIN-PAGE.");
     }
 }
