@@ -98,7 +98,7 @@
                     </graphic>
                 </Button>
 
-                <!-- Store Page Button -->
+                <!-- Shop Page Button -->
                 <Button text="Store"
                         VBox.vgrow="NEVER"
                         maxWidth="Infinity">
