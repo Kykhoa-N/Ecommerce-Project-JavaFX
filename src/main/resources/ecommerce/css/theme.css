@@ -12,7 +12,7 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
 }
 
-
+/*-- Icon Container --*/
 .icon-box {
     -fx-min-width: 16;
     -fx-min-height: 16;
@@ -22,6 +22,10 @@
     -fx-max-height: 16;
 }
 
+/*-- Content Host --*/
+.content-host {
+    -fx-padding: 60 60 0 60;
+}
 
 
 /*-- Size --*/

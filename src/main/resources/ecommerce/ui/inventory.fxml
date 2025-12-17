@@ -10,11 +10,14 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="ecommerce.controller.InventoryController"
             stylesheets="@/ecommerce/css/theme.css">
-        <VBox style="-fx-background-color: -primary-500;"
-              prefHeight="400"
-              prefWidth="400">
-            <Label text="Hello"/>
+            <VBox styleClass="white-panel"
+                  AnchorPane.topAnchor="0.0"
+                  AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0">
 
-        </VBox>
+                <Label text="Hello"/>
+
+            </VBox>
 
 </AnchorPane>

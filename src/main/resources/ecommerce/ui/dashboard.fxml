@@ -204,7 +204,7 @@
     </left>
 
     <center>
-        <StackPane fx:id="centerPane"/>
+        <StackPane fx:id="centerPane" styleClass="content-host"/>
     </center>
 
 </BorderPane>
