@@ -8,11 +8,13 @@ import java.util.*;
 
 import ecommerce.app.*;
 import javafx.scene.image.ImageView;
+import javafx.scene.shape.SVGPath;
 
 public class DashboardController implements UseAppContext {
 
     public Label accountName;
     public Label accountRole;
+    public SVGPath inventoryIcon;
 
     @FXML private Button logoutButton;
     private AppContext app;

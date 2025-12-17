@@ -22,15 +22,25 @@
     }
 
     /*-- Shade --*/
+     .icon-fill {
+        -fx-fill: -primary-500;
+     }
     .shade-bg {
+        -fx-text-fill: -shade-800;
         -fx-background-color: -shade-0;
         -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
     }
-    .shade-bg: hover {
+
+    .shade-bg:hover{
         -fx-background-color: -primary-500;
         -fx-text-fill: -shade-0;
     }
-    .shade-bg: pressed {
-            -fx-background-color: -primary-600;
-            -fx-text-fill: -shade-0;
-        }
+    .shade-bg:hover .icon-fill{
+        -fx-fill: -shade-0;
+    }
+
+    .shade-bg:pressed{
+        -fx-background-color: -primary-600;
+        -fx-text-fill: -shade-0;
+    }
+

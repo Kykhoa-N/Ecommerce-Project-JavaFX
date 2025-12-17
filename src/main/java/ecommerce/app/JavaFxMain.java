@@ -1,6 +1,8 @@
 package ecommerce.app;
 
 import ecommerce.controller.RegisterController;
+import ecommerce.model.Role;
+import ecommerce.model.User;
 import javafx.application.*;
 import javafx.fxml.*;
 import javafx.scene.*;
@@ -46,7 +48,8 @@ public class JavaFxMain extends Application {
         stage.show();
 
         // Use appContext helper method to switch Displays
-        appContext.switchTo("/ecommerce/ui/login.fxml");
+        appContext.setCurrentUser(new User("Ky-Anh Nguyen", "c", Role.ADMIN));
+        appContext.switchTo("/ecommerce/ui/dashboard.fxml");
     }
 
 

@@ -1,0 +1,38 @@
+
+/*-- Top Section  --*/
+.top-section {
+    -fx-pref-width: 270;
+    -fx-padding: 30 25 30 25;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+
+    -fx-background-color: linear-gradient(
+        to bottom,
+        -shade-5 0%,
+        -shade-5 99.4%,
+        rgba(0, 0, 0, 0.001) 100%
+    );
+}
+
+/*-- Profile Section  --*/
+.profile-section {
+    -fx-font-family: "Inter SemiBold";
+    -fx-pref-width: 270;
+    -fx-background-color: -shade-0;
+    -fx-padding: 20 25 20 25;
+}
+
+/*-- Bottom Section  --*/
+.bottom-section {
+    -fx-pref-width: 270;
+    -fx-padding: 15 25 40 25;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+
+    -fx-background-color: linear-gradient(
+        to top,
+        -shade-5 0%,
+        -shade-5 95%,
+        rgba(0, 0, 0, 0.001) 100%
+    );
+}
