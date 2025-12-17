@@ -11,8 +11,6 @@ import ecommerce.app.*;
 public class LoginController implements UseAppContext {
     @FXML private TextField nameField;
     @FXML private TextField emailField;
-    @FXML private Button loginButton;
-    @FXML private Button registerPageButton;
 
     private AppContext app;
 

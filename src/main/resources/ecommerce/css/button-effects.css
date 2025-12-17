@@ -32,15 +32,44 @@
     }
 
     .shade-bg:hover{
+        -fx-background-color: -primary-25;
+    }
+    .shade-bg:pressed {
         -fx-background-color: -primary-500;
         -fx-text-fill: -shade-0;
     }
-    .shade-bg:hover .icon-fill{
+    .shade-bg:pressed .icon-fill {
         -fx-fill: -shade-0;
     }
 
-    .shade-bg:pressed{
+
+    .toggle-button {
+        -fx-text-fill: -shade-800;
+        -fx-background-color: -shade-0;
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
+        -fx-font-family: "Inter Bold";
+        -fx-padding: 12 20;
+        -fx-graphic-text-gap: 20;
+        -fx-background-radius: 5;
+        -fx-alignment: CENTER_LEFT;
+        -fx-cursor: hand;
+    }
+    .toggle-button:hover {
+        -fx-background-color: -primary-25;
+    }
+
+    .toggle-button:pressed {
         -fx-background-color: -primary-600;
         -fx-text-fill: -shade-0;
     }
+    .toggle-button:pressed .icon-fill {
+        -fx-fill: -shade-0;
+    }
 
+    .toggle-button:selected {
+        -fx-background-color: -primary-500;
+        -fx-text-fill: -shade-0;
+    }
+    .toggle-button:selected .icon-fill {
+        -fx-fill: -shade-0;
+    }

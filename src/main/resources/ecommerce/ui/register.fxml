@@ -41,8 +41,7 @@
                   maxWidth="Infinity"/>
 
         <!-- Sign Up Button -->
-        <Button fx:id="registerButton"
-                onAction="#onRegister"
+        <Button onAction="#onRegister"
                 text="SIGN UP"
                 VBox.vgrow="NEVER"
                 maxWidth="Infinity">
@@ -58,8 +57,7 @@
             <Label text="Already have an account?" styleClass="gray-text"/>
 
             <!-- Login Page Button -->
-            <Button fx:id="loginPageButton"
-                    onAction="#goToLogin"
+            <Button onAction="#goToLogin"
                     text="Login">
                 <styleClass>
                     <String fx:value="text-button"/>

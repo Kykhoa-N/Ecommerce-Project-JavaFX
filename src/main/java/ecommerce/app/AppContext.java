@@ -3,6 +3,7 @@ package ecommerce.app;
 import javafx.application.*;
 import javafx.fxml.*;
 import javafx.scene.*;
+import javafx.scene.layout.Pane;
 import javafx.stage.*;
 import java.io.*;
 
@@ -82,6 +83,23 @@ public class AppContext {
 
             scene.setRoot(root);
             Platform.runLater(root::requestFocus);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void setCenter(Pane centerPane, String fxmlPath) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
+            Parent view = loader.load();
+
+            Object controller = loader.getController();
+            if (controller instanceof UseAppContext c) {
+                c.loadInfo(this);
+            }
+
+            centerPane.getChildren().setAll(view);
 
         } catch (IOException e) {
             e.printStackTrace();

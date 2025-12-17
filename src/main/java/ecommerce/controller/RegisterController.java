@@ -16,8 +16,6 @@ public class RegisterController implements UseAppContext{
     @FXML private TextField nameField;
     @FXML private TextField emailField;
     @FXML private ComboBox<Role> roleComboBox;
-    @FXML private Button registerButton;
-    @FXML private Button loginPageButton;
 
     private AppContext app;
 

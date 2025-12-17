@@ -1,6 +1,5 @@
 package ecommerce.controller;
 
-
 import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.fxml.*;
@@ -10,7 +9,7 @@ import java.util.*;
 import ecommerce.model.User;
 import ecommerce.app.*;
 
-public class InventoryController implements UseAppContext {
+public class ReportController implements UseAppContext {
 
     private AppContext app;
 

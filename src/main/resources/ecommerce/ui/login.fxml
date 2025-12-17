@@ -38,8 +38,7 @@
                        promptText="Email Address"/>
 
         <!-- Login Button -->
-        <Button fx:id="loginButton"
-                onAction="#onLogin"
+        <Button onAction="#onLogin"
                 text="LOGIN"
                 VBox.vgrow="NEVER"
                 maxWidth="Infinity">
@@ -55,8 +54,7 @@
             <Label text="Don't have an account?" styleClass="gray-text"/>
 
             <!-- Register Page Button -->
-            <Button fx:id="registerPageButton"
-                    onAction="#goToRegister"
+            <Button onAction="#goToRegister"
                     text="Sign Up">
                 <styleClass>
                     <String fx:value="text-button"/>

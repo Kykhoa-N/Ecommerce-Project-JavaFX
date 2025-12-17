@@ -10,7 +10,7 @@ import java.util.*;
 import ecommerce.model.User;
 import ecommerce.app.*;
 
-public class InventoryController implements UseAppContext {
+public class CartController implements UseAppContext {
 
     private AppContext app;
 
