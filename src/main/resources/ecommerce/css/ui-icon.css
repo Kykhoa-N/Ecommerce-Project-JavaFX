@@ -1,0 +1,28 @@
+/*-- Icon Container --*/
+    .icon-box {
+        -fx-min-width: 14;
+        -fx-min-height: 14;
+        -fx-pref-width: 14;
+        -fx-pref-height: 14;
+        -fx-max-width: 14;
+        -fx-max-height: 14;
+    }
+
+/* Icon Placeholder */
+    .icon-wrap {
+        -fx-min-width: 18;
+        -fx-min-height: 18;
+        -fx-background-color: -primary-50;
+        -fx-opacity: 0.6;
+    }
+
+/*-- Icon Color --*/
+    .white-icon {
+        -fx-fill: -shade-0;
+    }
+
+    .primary-icon {
+        -fx-fill: -primary-500;
+    }
+
+

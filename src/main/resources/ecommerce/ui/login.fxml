@@ -41,12 +41,8 @@
         <Button onAction="#onLogin"
                 text="LOGIN"
                 VBox.vgrow="NEVER"
-                maxWidth="Infinity">
-            <styleClass>
-                <String fx:value="block-button"/>
-                <String fx:value="primary-bg"/>
-            </styleClass>
-        </Button>
+                maxWidth="Infinity"
+                styleClass="primary-bg"/>
 
         <HBox alignment="CENTER" spacing="4">
 

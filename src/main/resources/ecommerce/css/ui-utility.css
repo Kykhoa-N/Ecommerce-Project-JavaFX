@@ -13,7 +13,7 @@
         -fx-border-color: -primary-500;
     }
 
-    /*-- Check Box  --*/
+/*-- Check Box  --*/
     .check-box .box {
         -fx-background-color: -shade-0;
         -fx-border-color: -shade-25;
@@ -25,7 +25,7 @@
         -fx-background-color: -shade-800;
     }
 
-    /*-- Combo Box --*/
+/*-- Combo Box --*/
     .combo-box {    /* Field Container */
         -fx-background-color: -shade-5;
         -fx-border-color: -shade-25;
@@ -63,33 +63,40 @@
         -fx-background-color: -shade-5;
     }
 
-/*-- Button Utility --*/
+/*-- Button --*/
+    .button {
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
+        -fx-font-family: "Inter Bold";
+        -fx-padding: 12 20;
+        -fx-background-radius: 5;
+        -fx-cursor: hand;
+    }
+
+/*-- Toggle Button --*/
+    .toggle-button {
+        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
+        -fx-font-family: "Inter Bold";
+        -fx-padding: 12 20;
+        -fx-background-radius: 5;
+        -fx-alignment: CENTER_LEFT;
+        -fx-graphic-text-gap: 20;
+        -fx-cursor: hand;
+    }
+
+/*-- Custom Button --*/
 
     /*-- Text Button --*/
     .text-button {
         -fx-background-color: transparent;
         -fx-font-family: "Inter SemiBold";
         -fx-padding: 0;
-        -fx-cursor: hand;
     }
     .text-button:hover {
         -fx-underline: true;
     }
 
-    /*-- Block Button --*/
-    .block-button {
-        -fx-font-family: "Inter Bold";
-        -fx-padding: 12 0;
-        -fx-background-radius: 5;
-        -fx-cursor: hand;
-    }
-
     /*-- Icon Button --*/
     .icon-button {
-        -fx-font-family: "Inter Bold";
-        -fx-padding: 12 20;
         -fx-graphic-text-gap: 20;
-        -fx-background-radius: 5;
         -fx-alignment: CENTER_LEFT;
-        -fx-cursor: hand;
     }

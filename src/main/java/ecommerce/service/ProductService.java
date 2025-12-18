@@ -2,6 +2,9 @@ package ecommerce.service;
 
 import ecommerce.model.*;
 import ecommerce.repo.*;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.util.*;
 
 public class ProductService {
@@ -107,6 +110,9 @@ public class ProductService {
         }
         return catalog;
     }
+    public ObservableList<Product> getObservableProducts() {
+        return FXCollections.observableArrayList(productRepo.getAll());
+    }
 
     // VIEW STORE
     public List<Product> viewAvailable(User user) {
@@ -119,6 +125,8 @@ public class ProductService {
                 .filter(product -> product.getQuantity() > 0)
                 .toList();
     }
+
+
 
     // FILTER PRICE BY BUDGET
     public List<Product> filterPrice(User user, double max_price) {

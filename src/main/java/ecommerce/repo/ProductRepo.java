@@ -5,6 +5,7 @@ import java.util.*;
 
 import ecommerce.service.FileDBLoader;
 import ecommerce.service.FileDBWriter;
+import javafx.collections.*;
 
 public class ProductRepo {
 
@@ -45,4 +46,5 @@ public class ProductRepo {
     public List<Product> getAll() {
         return new ArrayList<>(repo);
     }
+
 }
