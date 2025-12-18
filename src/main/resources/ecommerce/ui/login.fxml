@@ -42,7 +42,7 @@
                 text="LOGIN"
                 VBox.vgrow="NEVER"
                 maxWidth="Infinity"
-                styleClass="primary-bg"/>
+                styleClass="primary-block-button"/>
 
         <HBox alignment="CENTER" spacing="4">
 

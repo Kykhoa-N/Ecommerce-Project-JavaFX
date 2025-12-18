@@ -1,6 +1,6 @@
 /*-- Effects --*/
 
-    /*-- Primary --*/
+    /*-- Primary Text Button --*/
     .primary-text {
         -fx-text-fill: -primary-500;
     }
@@ -10,21 +10,20 @@
     .primary-text:pressed {
         -fx-text-fill: -primary-600;
     }
-    .primary-bg {
-        -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
+
+    /*-- Primary Block Button --*/
+    .primary-block-button {
         -fx-background-color: -primary-500;
         -fx-text-fill: -shade-0;
     }
-    .primary-bg:hover {
+    .primary-block-button:hover {
         -fx-background-color: -primary-90;
     }
-    .primary-bg:pressed {
+    .primary-block-button:pressed {
         -fx-background-color: -primary-600;
     }
 
-
-
-/*-- White Block and Toggle Button --*/
+    /*-- White Block and Toggle Button --*/
     .white-block-button {
         -fx-text-fill: -shade-800;
         -fx-background-color: -shade-0;

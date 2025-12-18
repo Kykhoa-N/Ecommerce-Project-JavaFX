@@ -110,6 +110,7 @@ public class ProductService {
         }
         return catalog;
     }
+
     public ObservableList<Product> getObservableProducts() {
         return FXCollections.observableArrayList(productRepo.getAll());
     }

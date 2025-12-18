@@ -39,10 +39,11 @@
                     <Region HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
 
                     <!-- Add Product Button -->
-                    <Button text="Add Product">
+                    <Button text="Add Product"
+                            onAction="#onAddProduct">
                         <styleClass>
                             <String fx:value="icon-button"/>
-                            <String fx:value="primary-bg"/>
+                            <String fx:value="primary-block-button"/>
                         </styleClass>
                         <graphic>
                             <StackPane styleClass="icon-box">
@@ -95,6 +96,7 @@
                     </top>
 
                     <center>
+
                         <TableView fx:id="productTable">
                             <columns>
                                 <TableColumn fx:id="nameCol" text="Name" prefWidth="220"/>

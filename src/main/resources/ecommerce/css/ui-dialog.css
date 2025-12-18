@@ -1,0 +1,16 @@
+.ui-dialog {
+    -fx-background-color: -shade-5;
+    -fx-hgap: 12;
+    -fx-vgap: 12;
+    -fx-padding: 10;
+}
+.ui-dialog .text-field {
+    -fx-padding: 5 10 5 10;
+}
+
+.ui-dialog .label {
+    -fx-text-fill: -shade-800;
+    -fx-font-size: 12;
+}
+
+
