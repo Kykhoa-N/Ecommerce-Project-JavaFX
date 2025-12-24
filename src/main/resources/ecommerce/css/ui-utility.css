@@ -100,3 +100,9 @@
         -fx-graphic-text-gap: 20;
         -fx-alignment: CENTER_LEFT;
     }
+
+    .icon-text-button {
+        -fx-background-color: transparent;
+        -fx-alignment: CENTER;
+        -fx-padding: 0;
+    }

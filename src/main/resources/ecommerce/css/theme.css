@@ -5,6 +5,7 @@
 @import "ui-sidebar.css";
 @import "ui-icon.css";
 @import "ui-dialog.css";
+@import "ui-table.css";
 
 .root {
     -fx-background-color: -primary-5;

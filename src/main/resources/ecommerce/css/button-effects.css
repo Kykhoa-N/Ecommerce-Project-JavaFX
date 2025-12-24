@@ -45,3 +45,18 @@
     .white-block-button:selected .primary-icon {
         -fx-fill: -shade-0;
     }
+
+    /*-- White Block and Toggle Button --*/
+    .icon-text-button:hover .shade-icon {
+        -fx-fill: -shade-75;
+    }
+    .icon-text-button:pressed .shade-icon {
+        -fx-fill: -shade-800;
+    }
+
+    .icon-text-button:hover .primary-icon {
+        -fx-fill: -primary-75;
+    }
+    .icon-text-button:pressed .primary-icon {
+        -fx-fill: -primary-700;
+    }

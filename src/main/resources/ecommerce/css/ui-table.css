@@ -1,0 +1,95 @@
+/*-- Whole Table --*/
+.table-view {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+
+
+/*-- Table Header --*/
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+    -fx-border-color: -shade-50;
+    -fx-border-width: 0 0 1 0;  /* bottom only */
+    -fx-padding: 8 0 10 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;  /* inherit from background strip */
+    -fx-border-color: transparent;
+    -fx-padding: 8 20 8 20;
+}
+.table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-family: "Inter Bold";
+    -fx-alignment: CENTER_LEFT;  /* center header titles */
+}
+
+
+
+/*-- Table Row --*/
+.table-cell {
+    -fx-text-fill: -shade-800;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0 40 0 20;
+    -fx-alignment: Center_LEFT;
+    }
+
+.table-row-cell:filled {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
+    -fx-background-color: -shade-5;
+    -fx-background-insets: 8 20 8 0;
+    -fx-background-radius: 5;
+    -fx-padding: 20 0 20 0;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+
+.table-row-cell:selected .text {
+    -fx-fill: -shade-800;
+}
+
+/*-- Scrolling --*/
+.table-view .scroll-bar:vertical { /*-- Container --*/
+    -fx-background-color: transparent;
+    -fx-pref-width: 10;
+}
+
+.table-view .scroll-bar:vertical .track { /*-- Background --*/
+    -fx-background-color: -shade-50;
+    -fx-border-color: transparent;
+}
+
+.table-view .scroll-bar:vertical .thumb { /*-- Drag Bar --*/
+    -fx-background-color: -shade-0;
+    -fx-background-radius: 5;
+}
+
+.table-view .scroll-bar:vertical .thumb:hover { /*-- Hover --*/
+    -fx-background-color: -shade-5;
+}
+
+.table-view .scroll-bar:vertical .thumb:pressed { /*-- Press --*/
+    -fx-background-color: -shade-15;
+}
+
+/* ===== Remove arrow buttons ===== */
+.table-view .scroll-bar .increment-button,
+.table-view .scroll-bar .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: -primary-500;
+}
+
+.table-view .scroll-bar .increment-arrow,
+.table-view .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+}

@@ -18,15 +18,6 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
 }
 
-.table-view {
-    -fx-table-cell-border-color: transparent;
-    -fx-background-insets: 0;
-}
-
-.table-cell {
-    -fx-padding: 12 16;
-}
-
 
 
 

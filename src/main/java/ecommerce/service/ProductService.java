@@ -103,16 +103,15 @@ public class ProductService {
 
         // choose view
         switch(view) {
-            case 0 -> catalog.sort(SORT_BY_CATEGORY);
-            case 1 -> catalog.sort(SORT_BY_NAME);
-            default -> {
-            }
+            case 1 -> catalog.sort(SORT_BY_PRICE);
+            case 2 -> catalog.sort(SORT_BY_CATEGORY);
+            default -> catalog.sort(SORT_BY_NAME);
         }
         return catalog;
     }
 
-    public ObservableList<Product> getObservableProducts() {
-        return FXCollections.observableArrayList(productRepo.getAll());
+    public ObservableList<Product> getObservableProducts(List<Product> list) {
+        return FXCollections.observableArrayList(list);
     }
 
     // VIEW STORE

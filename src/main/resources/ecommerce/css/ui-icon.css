@@ -25,4 +25,8 @@
         -fx-fill: -primary-500;
     }
 
+    .shade-icon {
+        -fx-fill: -shade-500;
+    }
+
 
