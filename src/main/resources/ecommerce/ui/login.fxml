@@ -54,7 +54,7 @@
                     text="Sign Up">
                 <styleClass>
                     <String fx:value="text-button"/>
-                    <String fx:value="primary-text"/>
+                    <String fx:value="primary-text-button"/>
                 </styleClass>
             </Button>
         </HBox>

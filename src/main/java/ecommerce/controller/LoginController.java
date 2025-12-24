@@ -37,7 +37,7 @@ public class LoginController implements UseAppContext {
             app.setCurrentUser(current_user);
             app.switchTo("/ecommerce/ui/dashboard.fxml");
 
-            System.out.println("LOGIN current user.");
+            System.out.println("LOGIN current user, go to DASHBOARD PAGE.");
         }
     }
 

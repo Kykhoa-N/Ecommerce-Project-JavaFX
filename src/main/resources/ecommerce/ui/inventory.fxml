@@ -61,7 +61,7 @@
                 <!-- Content Section -->
                 <BorderPane styleClass="content-page" VBox.vgrow="ALWAYS">
 
-
+                    <!-- Top Section -->
                     <top>
                         <HBox spacing="20" alignment="CENTER_RIGHT">
 
@@ -95,16 +95,23 @@
 
                     </top>
 
+                    <!-- Center Section -->
                     <center>
+                        <VBox>
+                            <Region minHeight="25"/>
 
-                        <TableView fx:id="productTable">
-                            <columns>
-                                <TableColumn fx:id="nameCol" text="Name" prefWidth="220"/>
-                                <TableColumn fx:id="categoryCol" text="Category" prefWidth="160"/>
-                                <TableColumn fx:id="priceCol" text="Price" prefWidth="120"/>
-                                <TableColumn fx:id="qtyCol" text="Qty" prefWidth="100"/>
-                            </columns>
-                        </TableView>
+                            <!-- Inventory Display -->
+                            <TableView fx:id="productTable">
+                                <columns>
+                                    <TableColumn fx:id="nameCol" text="Name" maxWidth="250" minWidth="250"/>
+                                    <TableColumn fx:id="categoryCol" text="Category" maxWidth="150" minWidth="150"/>
+                                    <TableColumn fx:id="priceCol" text="Price" maxWidth="90" minWidth="90"/>
+                                    <TableColumn fx:id="qtyCol" text="Qty" maxWidth="70" minWidth="70"/>
+                                    <TableColumn fx:id="actionCol"/>
+                                </columns>
+                            </TableView>
+
+                        </VBox>
                     </center>
 
                 </BorderPane>

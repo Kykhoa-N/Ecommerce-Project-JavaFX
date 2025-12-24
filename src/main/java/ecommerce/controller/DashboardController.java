@@ -20,7 +20,6 @@ public class DashboardController implements UseAppContext {
 
     @FXML
     private void initialize() {
-        System.out.println("Dashboard initialized");
     }
 
     @Override

@@ -1,13 +1,13 @@
 /*-- Effects --*/
 
     /*-- Primary Text Button --*/
-    .primary-text {
+    .primary-text-button {
         -fx-text-fill: -primary-500;
     }
-    .primary-text:hover {
+    .primary-text-button:hover {
         -fx-text-fill: -primary-75;
     }
-    .primary-text:pressed {
+    .primary-text-button:pressed {
         -fx-text-fill: -primary-600;
     }
 

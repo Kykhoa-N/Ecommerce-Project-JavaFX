@@ -32,8 +32,7 @@ public class CustomDialog {
 
         // Form Setup
         grid = new GridPane();
-        grid.setHgap(15);
-        grid.setVgap(10);
+        grid.getStyleClass().add("ui-dialog");
     }
 
     public Dialog<Void> getDialog() {
