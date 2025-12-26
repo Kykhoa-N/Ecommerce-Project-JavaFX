@@ -7,8 +7,6 @@ Cake,DessertCake,Dessert,14.55,5
 Bread,WheatBread,Wheat,1.23,4
 Tofu,SoyTofu,Soy,4.21,5
 Durian,FruitDurian,Fruit,18.76,6
-Apple Juice,JuiceApple Juice,Juice,3.25,7
 Biscuit,CarbohydrateBiscuit,Carbohydrate,5.99,6
-Bagel,BakeryBagel,Bakery,4.71,7
 Cheese,DairyCheese,Dairy,7.86,10
 Chicken,MeatChicken,Meat,2.19,5

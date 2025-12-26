@@ -3,9 +3,7 @@ package ecommerce.repo;
 import ecommerce.model.*;
 import java.util.*;
 
-import ecommerce.service.FileDBLoader;
-import ecommerce.service.FileDBWriter;
-import javafx.collections.*;
+import ecommerce.filehelper.*;
 
 public class ProductRepo {
 
@@ -28,6 +26,7 @@ public class ProductRepo {
     public boolean remove(String name) {
         for(Product product: repo) {
             if(product.getName().equals(name)) {
+                FileDBRemover.removeByName(DATABASE_PATH, name);
                 return repo.remove(product);
             }
         }

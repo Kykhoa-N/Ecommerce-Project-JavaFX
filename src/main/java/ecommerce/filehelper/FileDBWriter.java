@@ -1,4 +1,4 @@
-package ecommerce.service;
+package ecommerce.filehelper;
 
 import java.io.File;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package ecommerce.service;
+package ecommerce.filehelper;
 
 import java.io.BufferedReader;
 import java.io.File;
